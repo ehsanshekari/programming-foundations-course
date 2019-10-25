@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // While
+        /*
+          while(CONDITION){
+              INSTRUCTION #1
+              INSTRUCTION #2
+              ...
+          }
+        */
+        var n = prompt("Enter the numbers you want:");
+        n = parseInt(n);
+        var i = 1;
+        var sum = 0;
+        var adad;
+        while (i <= n) {
+            adad = parseInt(prompt("Enter your number:"));
+            sum = sum + adad;
+            i = i + 1;
+        }
+        document.write("SUM:" + sum);
+    </script>
+</body>
+
+</html>
