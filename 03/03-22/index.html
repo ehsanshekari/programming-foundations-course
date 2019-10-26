@@ -11,6 +11,47 @@
 <body>
   <script>
     // Students
+    var n = parseInt(prompt("Enter the number of students:"));
+    var totalAvg = 0;
+    var maxAvg = -1;
+    var minAvg = 21;
+    var maxStudentId;
+    var minStudentId;
+    var i;
+    var j;
+    var nCourses;
+    var studentId;
+    var sum;
+    var totalUnits;
+    var units;
+    var grade;
+    var avg;
+    for (i = 0; i < n; i++) {
+      nCourses = parseInt(prompt("Enter the number of courses of the #"  + (i + 1) + " student:"));
+      studentId = prompt("Enter the id of the #" + (i + 1) + " student:");
+      sum = 0;
+      totalUnits = 0;
+      for (j = 0; j < nCourses; j++) {
+        grade = parseInt(prompt("Enter the grade of student # " + (i + 1) + " for course # " + (j + 1)));
+        units = parseInt(prompt("Enter the units of student # " + (i + 1) + " for course # " + (j + 1)));
+        sum += units * grade;
+        totalUnits += units;
+      }
+      avg = sum / totalUnits;
+      totalAvg += avg;
+      if (avg >= maxAvg) {
+        maxAvg = avg;
+        maxStudentId = studentId;
+      }
+      if (avg <= minAvg) {
+        minAvg = avg;
+        minStudentId = studentId;
+      }
+    }
+    totalAvg = totalAvg / n;
+    document.write("totalAvg is: " + totalAvg + "<br>");
+    document.write("Max Avg is: " + maxAvg + " for studentId : " + maxStudentId + "<br>");
+    document.write("Min Avg is: " + minAvg + " for studentId : " + minStudentId + "<br>");
   </script>
 </body>
 
