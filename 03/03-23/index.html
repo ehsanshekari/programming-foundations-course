@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrays</title>
+</head>
+
+<body>
+  <script>
+    // Arrays
+    // var myArray = new Array();
+    /* var myArray = [];
+    myArray[0] = 'Ehsan';
+    myArray[1] = 32;
+    document.write(myArray.length + '<br>');
+    myArray.push('web developer');
+    document.write(myArray[2] + '  ' + myArray.length);*/
+    // Java int[] myArray = new int[10];
+
+    var n = 3;
+    var myArray = [];
+    var i;
+    var value;
+    for(i = 0; i < n; i++){
+      value = prompt("Enter your value");
+      myArray.push(value);
+    }
+
+
+    for(i = 0; i < myArray.length; i++){
+      document.write(myArray[i] + '<br>');
+    }
+  </script>
+</body>
+
+</html>
