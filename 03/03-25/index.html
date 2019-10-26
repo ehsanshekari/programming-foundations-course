@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temp</title>
+</head>
+
+<body>
+  <script>
+    // document.write(), prompt(), parseInt(), Math.floor(), isNaN()
+    // Equation is °C = 5/9 (°F - 32)
+
+    function fahren2Cent(fahren) { // Defining a function
+      var cent;
+      cent = 5 / 9 * (fahren - 32);
+      return cent;
+    }
+
+    var cent = fahren2Cent(50); // call or invoke a function
+    document.write('CENT: ' + cent + '<br>');
+    cent = fahren2Cent(80);
+    document.write('CENT: ' + cent + '<br>');
+
+    function sayHello() {
+      document.write('Hello!' + '<br>');
+    }
+
+    function sayHelloTo(name) {
+      document.write('Hello ' + name + '<br>');
+    }
+
+    function sum(a , b) {
+      return a + b;
+    }
+
+    sayHello();
+    sayHelloTo('Ehsan');
+    sum(10, 20);
+  </script>
+</body>
+
+</html>

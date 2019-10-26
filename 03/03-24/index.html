@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Array Avg</title>
+</head>
+
+<body>
+  <script>
+    var myArray = [14, 17, 15, 16];
+    var sum = 0;
+    var i;
+    var avg;
+
+    for (i = 0; i < myArray.length; i++) {
+      sum += myArray[i];
+    }
+    avg = sum / myArray.length;
+    document.write('AVG:' + avg + '<br>');
+
+    for (i = 0; i < myArray.length; i++) {
+      if (myArray[i] > avg) {
+        document.write(myArray[i] + '<br>');
+      }
+    }
+
+  </script>
+</body>
+
+</html>
