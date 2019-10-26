@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Varoon</title>
+</head>
+
+<body>
+  <script>
+    // Varoon
+    var n = 4256;
+    var m = n;
+    var varoon = 0;
+    var r;
+    while (n > 0) {
+      r = n % 10;
+      varoon = varoon * 10 + r;
+      n = Math.floor(n / 10);
+    }
+    document.write("ADAD: " + m + " VAROON: " + varoon);
+  </script>
+</body>
+
+</html>
