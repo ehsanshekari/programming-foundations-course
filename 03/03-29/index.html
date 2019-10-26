@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rains</title>
+</head>
+
+<body>
+  <script>
+    // Rains
+    var n = 4; //parseInt(prompt('Enter the number of cities'));
+    var rains = [
+      [10, 25, 10, 10],
+      [20, 10, 15, 30],
+      [15, 18, 25, 25],
+      [30, 10, 30, 10]
+    ]
+    var avgs = [];
+    var seasons = 4;
+    var sum;
+    /* for (var i = 0; i < n; i++) {
+      rains[i] = [];
+      for (var j = 0; j < seasons; j++) {
+        rains[i][j] = parseInt(prompt('Enter the rain amount value of city # '
+          + (i + 1) + "for season # " + (j + 1)));
+      }
+    }
+    document.write('Finish data gathering!!!');*/
+    for (var i = 0; i < seasons; i++) {
+      sum = 0;
+      for (var j = 0; j < n; j++) {
+        sum += rains[j][i];
+      }
+      avgs[i] = sum / n;
+    }
+    // document.write('avg calculation finished!!!');
+    for (var i = 0; i < seasons; i++) {
+      for (var j = 0; j < n; j++) {
+        if (rains[j][i] < avgs[i]) {
+          document.write("City #" + (j + 1) + " has rain value:" + rains[j][i] + " which is below avg:" 
+          + avgs[i] + ' in season #' + (i + 1) + '<br>');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
