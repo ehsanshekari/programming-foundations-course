@@ -7,7 +7,6 @@
 این دوره را می توانید از این [لینک](https://danup.ir/academy/e-shekari) تهیه کنید.
 
 ## تماس با من
-Email: e.shekari@gmail.com
-
+Email: e.shekari@gmail.com<br>
 Telegram id: @shekariehsan
 
